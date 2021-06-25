@@ -14,21 +14,20 @@ describe('Person', () => {
     });
 
     test('should give you your Mercury age', () => {
-      expect(user.mercuryAge()).toEqual(208)
+      expect(user.mercuryAge).toEqual(208)
     })
 
     test('should give you your Venus age', () => {
-      expect(user.venusAge()).toEqual(80)
+      expect(user.venusAge).toEqual(80)
     })
 
     test('should give you your Mars age', () => {
-      expect(user.marsAge()).toEqual(26)
+      expect(user.marsAge).toEqual(26)
     })
 
     test('should give you your Jupiter age', () => {
-      expect(user.jupiterAge()).toEqual(4)
+      expect(user.jupiterAge).toEqual(4)
     })
-
 
 
 });
