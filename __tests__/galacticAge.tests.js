@@ -55,6 +55,12 @@ describe('Person', () => {
       user.lifeExpectancyCalculator()
       expect(user.lifeExpectancy).toEqual(71);
     })
+    
+    test('should return a user life expectancy of 71 if user is a "Pescapetarian"', () => {
+      user = new Person("Kyle", 50, 70, "Pescapetarian", "none", 70);
+      user.lifeExpectancyCalculator()
+      expect(user.lifeExpectancy).toEqual(71);
+    })
 
 
 });
