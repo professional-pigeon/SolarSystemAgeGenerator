@@ -4,4 +4,8 @@ export default class Person {
     this.earthAge = earthAge;
   }
 
+  mercuryAge() {
+    return this.earthAge * .24;
+  }
+
 }
