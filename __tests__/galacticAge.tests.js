@@ -25,5 +25,10 @@ describe('Person', () => {
       expect(user.marsAge()).toEqual(26)
     })
 
+    test('should give you your Jupiter age', () => {
+      expect(user.jupiterAge()).toEqual(4)
+    })
+
+
 
 });
