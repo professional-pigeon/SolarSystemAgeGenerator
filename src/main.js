@@ -18,4 +18,8 @@
 
 life expectancy
 
-your 
+your height,
+your diet, 
+How many days a week to do you drink?
+your gender?
+
