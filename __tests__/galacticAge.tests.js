@@ -139,6 +139,12 @@ describe('Person', () => {
       expect(user.venusYearsLeft()).toEqual(17)
     })
 
+    test('if life expectancy is lower than your age, should return the difference in martian years', () => {
+      user = new Person("Kyle", 80, 74, "Vegan", 2, 70);
+      expect(user.marsYearsLeft()).toEqual(5)
+    })
+
+
 
 
 });
