@@ -111,9 +111,8 @@ describe('Person', () => {
       expect(user.marsLifeExpectancy()).toEqual(37)
     })
 
-
     test('should tell you your years left on Mars', () => {
-      expect(user.venusYearsLeft()).toEqual(11)
+      expect(user.marsYearsLeft()).toEqual(11)
     })
 
 

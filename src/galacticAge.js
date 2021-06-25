@@ -76,5 +76,9 @@ export default class Person {
     return Math.trunc(this.lifeExpectancy / 1.88);
   }
 
+  marsYearsLeft() {
+    this.lifeExpectancyCalculator();
+    return this.marsLifeExpectancy() - this.marsAge();
+  }
 
 }
