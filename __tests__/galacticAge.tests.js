@@ -1,4 +1,3 @@
-import { TestScheduler } from 'jest-cli';
 import Person from '../src/galacticAge.js';
 
 describe('Person', () => {
@@ -20,6 +19,10 @@ describe('Person', () => {
 
     test('should give you your Venus age', () => {
       expect(user.venusAge()).toEqual(80)
+    })
+
+    test('should give you your Mars age', () => {
+      expect(user.venusAge()).toEqual(26)
     })
 
 
