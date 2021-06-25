@@ -112,5 +112,10 @@ describe('Person', () => {
     })
 
 
+    test('should tell you your years left on Mars', () => {
+      expect(user.venusYearsLeft()).toEqual(11)
+    })
+
+
 });
 
