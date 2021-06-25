@@ -1,11 +1,11 @@
 export default class Person {
-  constructor(name, earthAge, height, diet, drinkFrequency, lifeExpactancy) {
+  constructor(name, earthAge, height, diet, drinkFrequency, lifeExpectancy) {
     this.name = name;
     this.earthAge = earthAge;
     this.height = height;
     this.diet = diet;
     this.drinkFrequency = drinkFrequency;
-    this.lifeExpectancy = lifeExpactancy;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
   mercuryAge() {
@@ -32,8 +32,8 @@ export default class Person {
     }
     if (this.diet === "Vegan") {
       this.lifeExpectancy = this.lifeExpectancy + 2;
-    } else {
-      ;
+    } else if (this.diet === "Vegetarian") {
+      this.lifeExpectancy = this.lifeExpectancy + 1;
     }
   }
 }
