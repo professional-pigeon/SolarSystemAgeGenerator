@@ -34,11 +34,13 @@ describe('Person', () => {
       expect(user.earthAge).toEqual(50);
       expect(user.height).toEqual(74);
       expect(user.diet).toEqual("Vegan");
-      expect(user.drinkFrequency).toEqual(2)
-      expect(user.lifeEpectancy).toEqual(70)
+      expect(user.drinkFrequency).toEqual(2);
+      expect(user.lifeExpectancy).toEqual(70);
     })
 
-    test('should return a user age of ')
+    test('should return a user life expectancy of 68 if user is taller than 72 inches') () => {
+      exect(user.lifeExpectancyCalculator()).toEqual(68);
+    }
 
 
 });
