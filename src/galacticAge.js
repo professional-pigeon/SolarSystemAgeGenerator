@@ -85,5 +85,11 @@ export default class Person {
     return Math.trunc(this.lifeExpectancy / 11.86);
   }
 
+  jupiterYearsLeft() {
+    this.lifeExpectancyCalculator();
+    return this.jupiterLifeExpectancy() - this.jupiterAge();
+  }
+
+
 
 }

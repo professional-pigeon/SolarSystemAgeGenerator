@@ -120,7 +120,7 @@ describe('Person', () => {
     })
 
     test('should tell you your years left on Jupiter', () => {
-      expect(user.jupiterLifeExpectancy()).toEqual(1)
+      expect(user.jupiterYearsLeft()).toEqual(1)
     })
 
 
