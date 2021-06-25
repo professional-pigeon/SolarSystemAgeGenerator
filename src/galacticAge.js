@@ -2,6 +2,9 @@ export default class Person {
   constructor(name, earthAge) {
     this.name = name;
     this.earthAge = earthAge;
+    this.height = height;
+    this.diet = diet;
+    this.drinkFrequency = drinkFrequency
   }
 
   mercuryAge() {
