@@ -13,3 +13,4 @@ describe('Character', () => {
       expect(user.name).toEqual("Kyle");
       expect(user.age).toEqual(32)
     });
+}
