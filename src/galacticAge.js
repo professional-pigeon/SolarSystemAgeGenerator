@@ -58,10 +58,13 @@ export default class Person {
     return Math.trunc(this.lifeExpectancy / .24);
   }
 
-
   mercuryYearsLeft() {
     this.lifeExpectancyCalculator();
     return this.mercuryLifeExpectancy() - this.mercuryAge();
+  }
+
+  venusLifeExpectancy() {
+    return Math.trunc(this.lifeExpectancy / .62);
   }
 
 
