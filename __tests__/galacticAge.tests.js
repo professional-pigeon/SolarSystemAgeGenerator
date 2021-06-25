@@ -5,7 +5,7 @@ describe('Person', () => {
   let user;
     
     beforeEach(() =>  {
-      user = new Person("Kyle", 50);
+      user = new Person("Kyle", 50, 74, "Vegan", 2);
     });
 
     test('should create a User object',  () => {
@@ -29,5 +29,14 @@ describe('Person', () => {
       expect(user.jupiterAge()).toEqual(4)
     })
 
+    test('should create construct with more key:value pairs', () => {
+      expect(user.name).toEqual("Kyle");
+      expect(user.earthAge).toEqual(50);
+      expect(user.height).toEqual(74);
+      expect(user.diet).toEqual("Vegan");
+      expect(user.drinkFrequency).toEqual(2)
+    })
+
 
 });
+
