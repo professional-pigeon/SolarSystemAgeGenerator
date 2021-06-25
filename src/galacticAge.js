@@ -77,7 +77,11 @@ export default class Person {
   
   venusYearsLeft() {
     this.lifeExpectancyCalculator();
-    return this.venusLifeExpectancy() - this.venusAge();
+    if (this.lifeExpectancy >= this.earthAge) {
+      return this.venusLifeExpectancy() - this.venusAge();
+    } else {
+      return this.venusAge() - this.venusLifeExpectancy();
+    }
   }
 
   marsLifeExpectancy() {
