@@ -107,6 +107,10 @@ describe('Person', () => {
       expect(user.venusYearsLeft()).toEqual(32)
     })
 
+    test('should tell you your life expectancy on Mars', () => {
+      expect(user.marsLifeExpectancy()).toEqual(37)
+    })
+
 
 });
 
