@@ -103,7 +103,11 @@ export default class Person {
 
   jupiterYearsLeft() {
     this.lifeExpectancyCalculator();
-    return this.jupiterLifeExpectancy() - this.jupiterAge();
+    if (this.lifeExpectancy >= this.earthAge) {
+      return this.jupiterLifeExpectancy() - this.jupiterAge();
+    } else {
+      return this.jupiterAge() - this.jupiterLifeExpectancy();
+    }
   }
 
 

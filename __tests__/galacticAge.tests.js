@@ -149,9 +149,5 @@ describe('Person', () => {
       expect(user.jupiterYearsLeft()).toEqual(1)
     })
 
-
-
-
-
 });
 
