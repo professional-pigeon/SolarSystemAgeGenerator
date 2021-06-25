@@ -8,6 +8,10 @@ export default class Person {
     return Math.trunc(this.earthAge / .24);
   }
 
+  venusAge() {
+    return Math.trunc(this.earthAge / .62);
+  }
+
 
 
 }

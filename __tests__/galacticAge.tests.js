@@ -19,8 +19,8 @@ describe('Person', () => {
     })
 
     test('should give you your Venus age', () => {
-      expect(user.venusAge()).toEqual(161)
+      expect(user.venusAge()).toEqual(80)
     })
 
-    
+
 });
