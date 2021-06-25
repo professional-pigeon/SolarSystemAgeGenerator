@@ -15,3 +15,7 @@
 // let uranusAge = age * 84.01
 // let neptuneAge = age * 164.79
 // let plutoAge = age * 248.59
+
+life expectancy
+
+your 
