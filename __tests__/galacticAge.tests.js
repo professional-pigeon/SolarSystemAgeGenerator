@@ -124,7 +124,8 @@ describe('Person', () => {
     })
 
     test('if life expectancy is lower than your age, should return the difference')
-      expect(user.lifeExpectancyCalculator()).toEqual(10)
+      user = new Person("Kyle", 80, 74, "Vegan", 2, 70);
+      expect(user.earthYearsLeft()).toEqual(10)
 
 
 });
