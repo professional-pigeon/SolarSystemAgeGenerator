@@ -38,9 +38,18 @@ describe('Person', () => {
       expect(user.lifeExpectancy).toEqual(70);
     })
 
-    test('should return a user life expectancy of 68 if user is taller than 72 inches') () => {
-      exect(user.lifeExpectancyCalculator()).toEqual(68);
-    }
+    test('should return a user life expectancy of 68 if user is taller than 72 inches through subtraction.', () => {
+      user = new Person("Kyle", 50, 74, "none", "none", 70);
+      user.lifeExpectancyCalculator()
+      expect(user.lifeExpectancy).toEqual(68);
+    })
+
+    test('should return a user life expectancy of 72 if user is a "Vegan"', () => {
+      user = new Person("Kyle", 50, 70, "Vegan", "none", 70);
+      user.lifeExpectancyCalculator()
+      expect(user.lifeExpectancy).toEqual(72);
+    })
+
 
 
 });

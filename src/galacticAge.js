@@ -24,6 +24,16 @@ export default class Person {
     return Math.trunc(this.earthAge / 11.86);
   }
 
-  
-
+  lifeExpectancyCalculator() {
+    if (this.height > 72) {
+      this.lifeExpectancy = this.lifeExpectancy -2;
+    } else {
+      ;
+    }
+    if (this.diet === "Vegan") {
+      this.lifeExpectancy = this.lifeExpectancy + 2;
+    } else {
+      ;
+    }
+  }
 }
