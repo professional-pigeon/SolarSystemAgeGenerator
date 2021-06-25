@@ -34,6 +34,13 @@ export default class Person {
       this.lifeExpectancy = this.lifeExpectancy + 2;
     } else if (this.diet === "Vegetarian" || this.diet === "Pescapetarian") {
       this.lifeExpectancy = this.lifeExpectancy + 1;
+    } else {
+      ;
+    }
+    if (this.drinkFrequency > 2) {
+      this.lifeExpectancy = this.lifeExpectancy -1;
+    } else {
+      ;
     }
   }
 }
