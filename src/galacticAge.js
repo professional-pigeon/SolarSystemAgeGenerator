@@ -90,7 +90,11 @@ export default class Person {
 
   marsYearsLeft() {
     this.lifeExpectancyCalculator();
-    return this.marsLifeExpectancy() - this.marsAge();
+    if (this.lifeExpectancy >= this.earthAge) {
+      return this.marsLifeExpectancy() - this.marsAge();
+    } else {
+      return this.marsAge() - this.marsLifeExpectancy();
+    }
   }
 
   jupiterLifeExpectancy() {
