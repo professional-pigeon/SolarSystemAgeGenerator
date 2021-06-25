@@ -37,9 +37,14 @@ export default class Person {
     } else {
       ;
     }
-    if (this.drinkFrequency > 2) {
+    if (this.drinkFrequency > 2 && this.drinkFrequency <= 4) {
       this.lifeExpectancy = this.lifeExpectancy -1;
-    } else {
+    } else if (this.drinkFrequency > 4 && this.drinkFrequency <= 5) {
+      this.lifeExpectancy = this.lifeExpectancy -2;
+    } else if (this.drinkFrequency > 5) {
+      this.lifeExpectancy = this.lifeExpectancy -5;
+    }
+    else {
       ;
     }
   }
