@@ -64,7 +64,11 @@ export default class Person {
 
   mercuryYearsLeft() {
     this.lifeExpectancyCalculator();
-    return this.mercuryLifeExpectancy() - this.mercuryAge();
+    if (this.lifeExpectancy >= this.earthAge) {
+      return this.mercuryLifeExpectancy() - this.mercuryAge();
+    } else {
+      return this.mercuryAge() - this.mercuryLifeExpectancy();
+    }
   }
 
   venusLifeExpectancy() {
