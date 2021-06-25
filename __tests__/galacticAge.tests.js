@@ -14,7 +14,11 @@ describe('Person', () => {
       expect(user.earthAge).toEqual(50)
     });
 
-    test('should give you your mercury age', () => {
-      expect(user.mercuryAge()).toEqual(12)
+    test('should give you your Mercury age', () => {
+      expect(user.mercuryAge()).toEqual(208)
+    })
+
+    test('should give you your Venus age', () => {
+      expect(user.mercuryAge()).toEqual(31)
     })
 });
