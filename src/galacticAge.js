@@ -109,7 +109,5 @@ export default class Person {
       return this.jupiterAge() - this.jupiterLifeExpectancy();
     }
   }
-
-
-
+  
 }
