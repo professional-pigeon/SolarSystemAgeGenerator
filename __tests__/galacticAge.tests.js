@@ -1,3 +1,4 @@
+import { TestScheduler } from 'jest-cli';
 import Person from '../src/galacticAge.js';
 
 describe('Person', () => {
@@ -5,11 +6,15 @@ describe('Person', () => {
   let user;
     
     beforeEach(() =>  {
-      user = new Person("Kyle", 32);
+      user = new Person("Kyle", 50);
     });
 
     test('should create a User object',  () => {
       expect(user.name).toEqual("Kyle");
-      expect(user.earthAge).toEqual(32)
+      expect(user.earthAge).toEqual(50)
     });
+
+    test('should give you your mercury age', () => {
+      expect(user.mercuryAge()).toEqual(12)
+    })
 });
