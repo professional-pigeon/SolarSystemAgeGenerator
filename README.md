@@ -26,7 +26,7 @@
 
 ## Description
 
-This is practice with constructors and prototype inheritance. Also creates custom methods for pizza service.
+This is practice in jest, node package manager, and tdd. The real fun exists in the javascript files.
 
 ## Setup/Installation Requirements
 
@@ -34,7 +34,7 @@ This is practice with constructors and prototype inheritance. Also creates custo
 * navigate to the top level of the directory
 * Open the file named "index.html" in your browser.
 * To inspect the code and check it's tests you'll need to run 'npm install' in the top level of your cloned directory to install node packages
-* Next you need to open with VS Studio Code
+* Next you need to open with VS Studio Code, directions for install are in the link under technologies used.
 
 ## Known Bugs
 
