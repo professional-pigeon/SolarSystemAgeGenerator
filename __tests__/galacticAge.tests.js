@@ -87,11 +87,20 @@ describe('Person', () => {
     })
 
     test('should tell you how many years you have left', () => {
-      expect(user.earthYearsLeft()).toEqual(20);
+      user = new Person("Kyle", 50, 74, "Vegan", 3, 70);
+      expect(user.earthYearsLeft()).toEqual(19);
     })
 
     test('should tell you your life expectancy on Mercury', () => {
       expect(user.mercuryLifeExpectancy()).toEqual(291)
+    })
+
+    test('should tell you your years left on Mercury', () => {
+      expect(user.mercuryYearsLeft()).toEqual(83)
+    })
+
+    test('should tell you your life expectancy on Venus', () => {
+      expect(user.venusLifeExpectancy()).toEqual(112)
     })
 
 });

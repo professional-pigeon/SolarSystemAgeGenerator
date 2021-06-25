@@ -1,11 +1,11 @@
 export default class Person {
-  constructor(name, earthAge, height, diet, drinkFrequency, lifeExpectancy) {
+  constructor(name, earthAge, height, diet, drinkFrequency, lifeExpectancyAvg) {
     this.name = name;
     this.earthAge = earthAge;
     this.height = height;
     this.diet = diet;
     this.drinkFrequency = drinkFrequency;
-    this.lifeExpectancy = lifeExpectancy;
+    this.lifeExpectancy = lifeExpectancyAvg;
   }
 
   mercuryAge() {
@@ -61,7 +61,7 @@ export default class Person {
 
   mercuryYearsLeft() {
     this.lifeExpectancyCalculator();
-    return this.mercurylifeExpectancy() - this.mercuryAge;
+    return this.mercuryLifeExpectancy() - this.mercuryAge();
   }
 
 
