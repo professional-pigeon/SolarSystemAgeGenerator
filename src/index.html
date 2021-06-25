@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Planet age generator</title>
 </head>
 <body>
   <div class="container">
-    <div class="card">
-      <head>Tell us about yourself!</head><br>
-      <label for="diet">Tells us about your diet</label>
-      <select class="form-control" id="diet">
-        <option value="Vegan">Vegan</option>
-        <option value="Vegetarian">Vegetarian</option>
-        <option value="Pescapetarian">Pescapetarian</option>
-        <option value="none">I eat whatever</option>
-      </select>
+    <div class="jumbotron">
+      <h2>Planet Age Generator</h2>
+      <p>This is an out of this atmosphere experience. You give us some basic information and we will tell you your age on other planets and your expectancy there. If you've been you're life expectancy we might even extend you a hearty congratulations.</p>
     </div>
+    <form>
+      <div class="card">
+        <head>Tell us about yourself!</head><br><br>
+        <body>
+        <div class="form-group">
+          <label for="person">Your name</label>
+          <input id="person" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="diet">Your diet:</label>
+          <select class="form-control" id="diet">
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Pescapetarian">Pescapetarian</option>
+            <option value="none">I eat whatever</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="height">Your height in inches</label>
+          <input id="height" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="diet">How many days do you drink alcohol weekly:</label>
+          <select class="form-control" id="diet">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+      </body>
+      </div>
+    </form>
 
   </div>
 </body>
