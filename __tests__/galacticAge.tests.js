@@ -115,6 +115,10 @@ describe('Person', () => {
       expect(user.marsYearsLeft()).toEqual(11)
     })
 
+    test('should tell you your life expectancy on Jupiter', () => {
+      expect(user.jupiterLifeExpectancy()).toEqual(5)
+    })
+
 
 });
 
