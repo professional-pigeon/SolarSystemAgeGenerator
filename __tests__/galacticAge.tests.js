@@ -62,6 +62,12 @@ describe('Person', () => {
       expect(user.lifeExpectancy).toEqual(71);
     })
 
+    test('should lose a year of expectancy for drinking more than 2 times a week', () => {
+      user = new Person("Kyle", 50, 70, "none", 3, 70);
+      user.lifeExpectancyCalculator()
+      expect(user.lifeExpectancy).toEqual(69);
+    })
+
 
 });
 
