@@ -5,7 +5,7 @@ describe('Person', () => {
   let user;
     
     beforeEach(() =>  {
-      user = new Person("Kyle", 50, 74, "Vegan", 2);
+      user = new Person("Kyle", 50, 74, "Vegan", 2, 70);
     });
 
     test('should create a User object',  () => {
@@ -35,7 +35,10 @@ describe('Person', () => {
       expect(user.height).toEqual(74);
       expect(user.diet).toEqual("Vegan");
       expect(user.drinkFrequency).toEqual(2)
+      expect(user.lifeEpectancy).toEqual(70)
     })
+
+    test('should return a user age of ')
 
 
 });
