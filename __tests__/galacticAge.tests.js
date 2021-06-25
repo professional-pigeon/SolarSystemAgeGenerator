@@ -80,10 +80,15 @@ describe('Person', () => {
       expect(user.lifeExpectancy).toEqual(65);
     })
 
-    test('if you taller than 72, a vegan, and you drink 3 days a week, you are expected to live 69 years' () => {
+    test('if you taller than 72, a vegan, and you drink 3 days a week, you are expected to live 69 years', () => {
       user = new Person("Kyle", 50, 74, "Vegan", 3, 70);
       user.lifeExpectancyCalculator()
-      expect(user.lifeExpectancy).toEqual(65);
+      expect(user.lifeExpectancy).toEqual(69);
+    })
+
+    test('should tell you how many years you have left', () => {
+      user = new Person("Kyle", 50, 74, "Vegan", 3, 70);
+      expect(user.lifeExpectancyDifferece()).toEqual(19);
     })
 
 });

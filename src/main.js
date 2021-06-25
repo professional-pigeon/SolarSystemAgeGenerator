@@ -16,10 +16,10 @@
 // let neptuneAge = age * 164.79
 // let plutoAge = age * 248.59
 
-life expectancy
+// life expectancy
 
-your height,
-your diet, 
-How many days a week to do you drink?
-your gender?
+// your height,
+// your diet, 
+// How many days a week to do you drink?
+// your gender?
 
