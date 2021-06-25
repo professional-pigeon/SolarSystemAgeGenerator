@@ -119,6 +119,10 @@ describe('Person', () => {
       expect(user.jupiterLifeExpectancy()).toEqual(5)
     })
 
+    test('should tell you your years left on Jupiter', () => {
+      expect(user.jupiterLifeExpectancy()).toEqual(1)
+    })
+
 
 });
 
