@@ -1,16 +1,15 @@
-  
-import User from '../src/galacticAge.js';
+import Person from '../src/galacticAge.js';
 
-describe('Character', () => {
+describe('Person', () => {
 
-  let User;
+  let user;
     
     beforeEach(() =>  {
-      User = new User("Kyle", 32);
+      user = new Person("Kyle", 32);
     });
 
     test('should create a User object',  () => {
       expect(user.name).toEqual("Kyle");
-      expect(user.age).toEqual(32)
+      expect(user.earthAge).toEqual(32)
     });
-}
+});
