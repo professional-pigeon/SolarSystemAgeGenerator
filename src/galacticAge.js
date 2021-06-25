@@ -48,4 +48,9 @@ export default class Person {
       ;
     }
   }
+
+  earthYearsLeft() {
+    this.lifeExpectancyCalculator();
+    return this.lifeExpectancy - this.earthAge;
+  }
 }
