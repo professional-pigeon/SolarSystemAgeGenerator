@@ -22,7 +22,7 @@ describe('Person', () => {
     })
 
     test('should give you your Mars age', () => {
-      expect(user.venusAge()).toEqual(26)
+      expect(user.marsAge()).toEqual(26)
     })
 
 

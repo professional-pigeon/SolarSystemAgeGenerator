@@ -12,6 +12,9 @@ export default class Person {
     return Math.trunc(this.earthAge / .62);
   }
 
+  marsAge() {
+    return Math.trunc(this.earthAge / 1.88);
+  }
 
 
 }
