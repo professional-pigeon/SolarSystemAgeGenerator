@@ -66,6 +66,11 @@ export default class Person {
   venusLifeExpectancy() {
     return Math.trunc(this.lifeExpectancy / .62);
   }
+  
+  venusYearsLeft() {
+    this.lifeExpectancyCalculator();
+    return this.venusLifeExpectancy() - this.venusAge();
+  }
 
 
 }
