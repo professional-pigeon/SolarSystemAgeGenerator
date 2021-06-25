@@ -51,7 +51,11 @@ export default class Person {
 
   earthYearsLeft() {
     this.lifeExpectancyCalculator();
-    return this.lifeExpectancy - this.earthAge;
+    if (this.lifeExpectancy >= this.earthAge) {
+      return this.lifeExpectancy - this.earthAge;
+    } else {
+      return this.earthAge - this.lifeExpectancy;
+    }
   }
 
   mercuryLifeExpectancy() {
