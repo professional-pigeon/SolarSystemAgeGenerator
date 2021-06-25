@@ -72,5 +72,9 @@ export default class Person {
     return this.venusLifeExpectancy() - this.venusAge();
   }
 
+  marsLifeExpectancy() {
+    return Math.trunc(this.lifeExpectancy / 1.88);
+  }
+
 
 }
