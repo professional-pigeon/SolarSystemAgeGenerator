@@ -53,4 +53,14 @@ export default class Person {
     this.lifeExpectancyCalculator();
     return this.lifeExpectancy - this.earthAge;
   }
+
+
+  mercuryYearsLeft() {
+    this.lifeExpectancyCalculator();
+    let mercuryLifeExpectancy = this.lifeExpectancy
+    let mercuryAge = this.mercuryAge();
+    return mercurylifeExpectancy - mercuryAge;
+  }
+
+
 }
