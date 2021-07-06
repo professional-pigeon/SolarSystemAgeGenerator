@@ -35,6 +35,7 @@ This is practice in jest, node package manager, and tdd. The real fun exists in 
 * Open the file named "index.html" in your browser.
 * To inspect the code and check it's tests you'll need to run 'npm install' in the top level of your cloned directory to install node packages
 * Next you need to open with VS Studio Code, directions for install are in the link under technologies used.
+* After that you can use the terminal to run the command "npm run test" and it will run the tests and output the passing results.
 
 ## Known Bugs
 
